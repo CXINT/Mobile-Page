@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--指定html为utf 编码-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--移动端自适应标签-->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="http://s.goutong.baidu.com/webim//1506424099/asset/message/css/main.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>mmV</title>
+
+
+
+<!-- baidu -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?079e280a553cfe164f2810afde4d921d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- baidu -->
+
+</head>
+
+<body>
+<img src="images/01.jpg" />
+<img src="images/02.jpg" />
+<img src="images/03.jpg" />
+
+
+<div style="margin:0;padding:0;background-color:#f6f6f6;font-size:1.2em; color:#F00;font-weight:bold;">
+<p style="text-align:center;">
+添加微信 <u>mmv519</u> 领取胶原蛋白试用装<br/>或留下手机号微信号，我们会第一时间联系您
+</p>
+</div>
+    <form id="mess-form" method="post" action="action.php" autocomplete="off">
+        <div id="visitorName-wrapper" class="item-container">
+            <label id="name" for="visitorName"></label>
+            <div class="ctrl_wrap">
+                <div class="ipt_wrap">
+                    <input type="text"
+                        name="visitorName"
+                        id="visitorName"
+                        maxlength="100"
+                        spellcheck="false"
+                        placeholder="请填写姓名"
+						require="required" />
+                </div>
+            </div>
+        </div>
+	    <div id="visitorPhone-wrapper" class="item-container">
+	        <label id="phone" for="visitorPhone"></label>
+	        <div class="ctrl_wrap">
+	            <div class="ipt_wrap">
+	                <input type="text"
+	                       id="visitorPhone"
+	                       name="visitorPhone"
+	                       maxlength="100"
+	                       spellcheck="false"
+	                       placeholder="请填写手机号或者微信号"
+						   require="required"/>
+	            </div>
+	        </div>
+	    </div>
+        <button type="submit" onclick="check3()" class="mess_send">发送</button>
+    </form>
+    <!-- <div class="brand"></div> -->
+
+<img src="images/zizhi.png" />
+<br><br>
+<p style="text-align:center;font-size:12px;">广州叶子佳人商贸有限公司 <br>地址：广州市天河区棠东东路4号<br>
+粤ICP备16064637号-1 <br>电话：4006932708 </p>
+
+<div class="bottom">
+<p  class="p">领取胶原蛋白试用装</p>
+
+
+<div class="left">
+<a href="http://p.qiao.baidu.com/cps/chat?siteId=11227807&userId=24538660" target="_blank" >
+<input type="button"   value="在线咨询" style="width:80%; height:50px; background-color:#FFF; border:1px solid #CCC; font-size:2.5em;"  />
+</a>
+</div>
+
+<div class="right">
+<div class="font">
+<a href="tel:4006932708" style="color:#FFF;">
+电话咨询
+</a>
+</div>
+</div>
+
+</div>
+<script>
+function check3(){
+	var visitorName =document.getElementById('visitorName').value;
+	var visitorPhone =document.getElementById('visitorPhone').value;
+	//alert(name);
+	if(visitorName==''){ alert('名字不能为空');  return false;}
+	if(visitorPhone==''){ alert('手机号码或者微信号不能为空'); return false;}
+
+	mess-form.submit();
+}
+
+</script>
+</body>
+</html>
